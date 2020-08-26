@@ -16,10 +16,10 @@ static_resources:
             virtual_hosts:
             - name: service
               domains:
-              - "*"
+              - "nodeapp.dparthi.local"
               routes:
               - match:
-                  prefix: "/service"
+                  prefix: "/"
                 route:
                   cluster: local_service
           http_filters:
